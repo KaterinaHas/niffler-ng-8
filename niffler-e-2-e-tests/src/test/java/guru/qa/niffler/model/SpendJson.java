@@ -6,7 +6,6 @@ import guru.qa.niffler.data.entity.spend.SpendEntity;
 
 import java.util.Date;
 import java.util.UUID;
-
 public record SpendJson(
     @JsonProperty("id")
     UUID id,
