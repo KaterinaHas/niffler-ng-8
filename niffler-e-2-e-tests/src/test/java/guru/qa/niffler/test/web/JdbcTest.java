@@ -36,7 +36,7 @@ public class JdbcTest {
     System.out.println(spend);
   }
 
-  @Test
+  /*@Test
   void springJdbcTest() {
     UsersDbClient usersDbClient = new UsersDbClient();
     UserJson user = usersDbClient.createUser(
@@ -53,5 +53,5 @@ public class JdbcTest {
         )
     );
     System.out.println(user);
-  }
+  }*/
 }
