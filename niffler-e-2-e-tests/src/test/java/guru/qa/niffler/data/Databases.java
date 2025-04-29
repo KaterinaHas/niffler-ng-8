@@ -26,12 +26,8 @@ public class Databases {
     public record XaFunction<T>(Function<Connection, T> function, String jdbcUrl) {
     }
 
-    ;
-
     public record XaConsumer<T>(Consumer<Connection> consumer, String jdbcUrl) {
     }
-
-    ;
 
     public static <T> T transaction(Function<Connection, T> function, String jdbcUrl) {
         Connection connection = null;
