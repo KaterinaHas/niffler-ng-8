@@ -24,7 +24,7 @@ public record UserJson(
         @JsonProperty("photoSmall")
         String photoSmall) {
 
-    public static UserJson fromEntity(UserEntity entity) {
+    public static UserJson fromEntity(guru.qa.niffler.data.entity.userdata.UserEntity userEntity, UserEntity entity) {
         return new UserJson(
                 entity.getId(),
                 entity.getUsername(),
